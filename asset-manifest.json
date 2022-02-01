@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Ecom278/static/css/main.7403bb2e.css",
+    "main.js": "/Ecom278/static/js/main.f587674d.js",
+    "static/media/shopping-bag.svg": "/Ecom278/static/media/shopping-bag.a688874f6f1507316bdfa420328a4a53.svg",
+    "static/media/crown.svg": "/Ecom278/static/media/crown.3a4e2b15908e7a4c25343677d232b7e6.svg",
+    "index.html": "/Ecom278/index.html",
+    "main.7403bb2e.css.map": "/Ecom278/static/css/main.7403bb2e.css.map",
+    "main.f587674d.js.map": "/Ecom278/static/js/main.f587674d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7403bb2e.css",
+    "static/js/main.f587674d.js"
+  ]
+}
