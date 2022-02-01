@@ -1,5 +1,5 @@
 {
-  "name": "Ecom278",
+  "name": "ecom278",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://saleem278.github.io/Ecom278/",
@@ -17,6 +17,7 @@
     "react-scripts": "5.0.0",
     "redux": "^4.1.2",
     "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
     "reselect": "^4.1.5",
     "web-vitals": "^2.1.4"
   },
