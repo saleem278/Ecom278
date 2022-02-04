@@ -40,7 +40,7 @@ class App extends Component {
         <Header />
         <Routes>
           <Route exact path="/" caseSensitive={false} element={<Homepage />} />
-          <Route exact path="/shop" caseSensitive={false} element={<Shop />} />
+          <Route exact path="/shop/*" caseSensitive={false} element={<Shop />} />
           <Route exact path="/checkout" caseSensitive={false} element={<CheckoutPage />} />
           <Route
             exact
