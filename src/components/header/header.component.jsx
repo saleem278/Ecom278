@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { ReactComponent as Logo } from "../../assets/crown.svg";
+import Logo from "../../assets/ecom.png";
 import {HeaderContainer, LogoContainer, OptionsContainer,OptionLink} from "./header.styles";
 import { auth } from "../../firebase/firebase.utils";
 import CartIcon from "../cart-icon/cart-icon.component";
@@ -12,7 +12,7 @@ import { selectCurrentUser } from "../../redux/user/user.selectors";
 const Header = ({ currentUser, hidden }) => (
   <HeaderContainer>
     <LogoContainer to="/">
-      <Logo className="logo" />
+      <img src={Logo} style={{width:130,height:80,marginLeft:-20,marginTop:-20}} />
     </LogoContainer>
     <OptionsContainer>
       <OptionLink to="/shop">
