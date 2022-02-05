@@ -2,7 +2,7 @@
   "name": "ecom278",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://saleem278.github.io/Ecom278/",
+  "homepage": "https://ecom278.herokuapp.com/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
