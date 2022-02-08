@@ -6,7 +6,7 @@ import { HomePageContainer } from "./homepage.styles";
 
 const Homepage = () => (
   <HomePageContainer>
-    <Directory />/
+    <Directory />
   </HomePageContainer>
 );
 export default Homepage;
