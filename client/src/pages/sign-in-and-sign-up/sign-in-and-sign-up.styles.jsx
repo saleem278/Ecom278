@@ -8,10 +8,11 @@ export const SignInAndSignUpContainer = styled.div`
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
-    width: unset;
+    width: 320px;
+    margin:30px;
     align-items: center;
     > *:first-child {
-      margin-bottom: 50px;
+      margin-bottom: 100px;
     }
   }
 `;

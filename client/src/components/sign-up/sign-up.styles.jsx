@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const SignUpContainer = styled.div`
   display: flex;
@@ -8,4 +8,8 @@ export const SignUpContainer = styled.div`
 
 export const SignUpTitle = styled.h2`
   margin: 10px 0;
+`;
+export const CustomButtonContainer = styled.div`
+display: flex;
+  justify-content: center;
 `;
