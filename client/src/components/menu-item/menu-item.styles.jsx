@@ -21,14 +21,10 @@ export const MenuItemContainer = styled.div`
       opacity: 0.9;
     }
   }
-  &:first-child {
-    margin-right: 7.5px;
-  }
-  &:last-child {
-    margin-left: 7.5px;
-  }
+  
   @media screen and (max-width: 800px) {
     height: 200px;
+    width:90%;
   }
 `;
 
@@ -51,6 +47,9 @@ export const ContentContainer = styled.div`
   background-color: white;
   opacity: 0.7;
   position: absolute;
+  @media screen and (max-width: 800px) {
+    padding:0 15px;
+  }
 `;
 
 export const ContentTitle = styled.span`
