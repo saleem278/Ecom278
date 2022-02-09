@@ -17,6 +17,7 @@ const StripeCheckoutButton = ({ price }) => {
     })
       .then((res) => {
         alert("Payment Successful");
+        
       })
       .catch((error) => {
         console.log("Payment Error: ", JSON.parse(error));
@@ -34,7 +35,7 @@ const StripeCheckoutButton = ({ price }) => {
       amount={priceForStripe}
       panelLabel="Pay Now"
       token={onToken}
-      currency="inr"
+      currency="INR"
       stripeKey={publishableKey}
     />
   );

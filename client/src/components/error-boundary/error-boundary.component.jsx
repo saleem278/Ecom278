@@ -4,7 +4,7 @@ import {
   ErrorImageOverlay,
   ErrorImageContainer,
   ErrorImageText,
-} from "./error-boundary.styles";
+} from "./Error.styles";
 
 class ErrorBoundary extends React.Component {
   constructor() {
