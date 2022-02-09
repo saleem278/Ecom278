@@ -1,33 +1,36 @@
 import styled, { css } from "styled-components";
 
 const buttonStyles = css`
-  background-color: black;
+  background-color: #e56931;
   color: white;
   border: none;
   &:hover {
     background-color: white;
-    color: black;
-    border: 1px solid black;
+    color: #e56931;
+    border: 1px solid #e56931;
   }
 `;
 
 const invertedButtonStyles = css`
   background-color: white;
-  color: black;
-  border: 1px solid black;
+  color: #e56931;
+  border: 1px solid #e56931;
   &:hover {
-    background-color: black;
+    background-color: #e56931;
     color: white;
-    border: none;
+    border: 1px solid #fff;
   }
 `;
 
 const googleSignInStyles = css`
   background-color: #4285f4;
   color: white;
+  line-height: unset;
+  border: 1px solid #4285f4;
   &:hover {
-    background-color: #357ae8;
-    border: none;
+    background-color: #fff;
+    color: #4285f4;
+    border: 1px solid #4285f4;
   }
 `;
 
