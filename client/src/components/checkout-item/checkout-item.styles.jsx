@@ -1,10 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CheckoutItemContainer = styled.div`
   width: 100%;
   display: flex;
   min-height: 100px;
-  border-bottom: 1px solid darkgrey;
+  border-bottom: 1px solid #f8cab4;
   padding: 15px 0;
   font-size: 20px;
   align-items: center;
@@ -31,6 +31,7 @@ export const TextContainer = styled.span`
 
 export const QuantityContainer = styled(TextContainer)`
   display: flex;
+  color: #ff5100;
   span {
     margin: 0 10px;
   }
@@ -42,4 +43,7 @@ export const QuantityContainer = styled(TextContainer)`
 export const RemoveButtonContainer = styled.div`
   padding-left: 12px;
   cursor: pointer;
+  color: red;
+  font-size: 25px;
+  font-weight: bolder;
 `;
