@@ -24,9 +24,9 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
       </ImageContainer>
       <TextContainer>{name}</TextContainer>
       <QuantityContainer>
-        <div style={{ border:"2px solid #E66B34",borderRadius:"100px",padding:"1px",marginTop:3}} onClick={() => removeItem(cartItem)}>➖</div>
-        <span style={{fontWeight:"bold",marginTop:3,border:"2px solid #E66B34", padding:"1px 15px"}}>{quantity}</span>
-        <div style={{borderRadius:"100px",border:"2px solid #E66B34",padding:"1px",marginTop:3}} onClick={() => addItem(cartItem)}>➕</div>
+        <div onClick={() => removeItem(cartItem)}>&#10094;</div>
+        <span>{quantity}</span>
+        <div onClick={() => addItem(cartItem)}>&#10095;</div>
       </QuantityContainer>
       <TextContainer>₹{price}</TextContainer>
       <RemoveButtonContainer onClick={() => clearItem(cartItem)}>
