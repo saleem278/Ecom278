@@ -5,9 +5,11 @@ export const CollectionItemContainer = styled.div`
   width: 22vw;
   display: flex;
   flex-direction: column;
-  height: 350px;
+  height: 400px;
   align-items: center;
   position: relative;
+  border: 2px solid #f7f7f7;
+  padding: 5px;
 
   &:hover {
     .image {
@@ -49,8 +51,9 @@ export const AddButton = styled(CustomButton)`
 
 export const BackgroundImage = styled.div`
   width: 100%;
-  height: 95%;
-  background-size: cover;
+  height: 90%;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 5px;
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
@@ -58,18 +61,19 @@ export const BackgroundImage = styled.div`
 
 export const CollectionFooterContainer = styled.div`
   width: 100%;
-  height: 5%;
+  height: 10%;
   display: flex;
+  margin-bottom: 7px;
   justify-content: space-between;
   font-size: 18px;
 `;
 
 export const NameContainer = styled.span`
-  width: 90%;
+  width: 85%;
   margin-bottom: 15px;
 `;
 
 export const PriceContainer = styled.span`
-  width: 10%;
+  width: 15%;
   text-align: right;
 `;

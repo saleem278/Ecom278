@@ -1,36 +1,36 @@
 const INITIAL_STATE = {
   sections: [
     {
-      title: 'hats',
-      imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+      title: 'Electronics',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/ecom78-129c2.appspot.com/o/Samsung%20Smart%20TV.webp?alt=media&token=22247f13-98b4-4dbe-9bc6-86a6569a44ac',
       id: 1,
-      linkUrl: 'shop/hats'
+      linkUrl: 'shop/electronics'
     },
     {
-      title: 'jackets',
+      title: 'Clothes',
       imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
       id: 2,
-      linkUrl: 'shop/jackets'
+      linkUrl: 'shop/clothes'
     },
     {
-      title: 'sneakers',
-      imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+      title: 'Grocery',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/ecom78-129c2.appspot.com/o/Grocery%20Banner.jpg?alt=media&token=e9638833-4d0a-4f43-a4d2-12af053e5d0f',
       id: 3,
-      linkUrl: 'shop/sneakers'
+      linkUrl: 'shop/grocery'
     },
     {
-      title: 'womens',
+      title: 'Beauty and Personal Care',
       imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
       size: 'large',
       id: 4,
-      linkUrl: 'shop/womens'
+      linkUrl: 'shop/beauty'
     },
     {
-      title: 'mens',
-      imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+      title: 'Books',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/ecom78-129c2.appspot.com/o/Book%20Banner.jpg?alt=media&token=3c47cdd0-6818-476f-a67c-92d32f124152',
       size: 'large',
       id: 5,
-      linkUrl: 'shop/mens'
+      linkUrl: 'shop/books'
     }
   ]
 };
