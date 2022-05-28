@@ -21,7 +21,7 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
       <img
         src={Logo}
         alt="logo"
-        style={{ width: 130, height: 80, marginLeft: -20, marginTop: -20 }}
+        style={{ width: 130, height: 80, marginLeft: -20, marginTop: -40 }}
       />
     </LogoContainer>
     <OptionsContainer>
