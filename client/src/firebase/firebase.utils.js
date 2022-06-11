@@ -3,13 +3,12 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBegmBECajpPZoZzI4mqdYeC8XjYmwR6UE",
-  authDomain: "ecom78-129c2.firebaseapp.com",
-  projectId: "ecom78-129c2",
-  storageBucket: "ecom78-129c2.appspot.com",
-  messagingSenderId: "573022668325",
-  appId: "1:573022668325:web:83c645b1d20b0d7b6221cc",
-  measurementId: "G-F4E9RH0RY5",
+  apiKey: "AIzaSyB5iEv5nW9PQPTQVBxJZvsfGtwcnkLAIbM",
+  authDomain: "wonderbox-ecom.firebaseapp.com",
+  projectId: "wonderbox-ecom",
+  storageBucket: "wonderbox-ecom.appspot.com",
+  messagingSenderId: "763796288135",
+  appId: "1:763796288135:web:67896d8ebff1053d237e22"
 };
 firebase.initializeApp(firebaseConfig);
 
