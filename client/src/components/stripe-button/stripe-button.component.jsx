@@ -9,12 +9,15 @@ import {
   selectCartItems,
   selectCartTotal,
 } from "../../redux/cart/cart.selectors";
-const StripeCheckoutButton = ({ price,clearCart }) => {
+import {selectCurrentUser} from  '..//../redux/user/user.selectors';
+const StripeCheckoutButton = ({ price,clearCart,user }) => {
   const priceForStripe = price * 100;
   const publishableKey =
     "pk_test_51HCbm5LrJBbThTdEEcoYKnJCs76XKQm6Z48lYqqf2MYVFLiNld24kL3gI6DCNdrxhGfRCgyivBI6RYIM8y4kOqU600fQCI1Tvj";
-
+console.log(user.email);
+  
   const onToken = (token) => {
+    console.log('hello3');
     axios({
       url: "payment",
       method: "post",
@@ -24,8 +27,8 @@ const StripeCheckoutButton = ({ price,clearCart }) => {
       },
     })
       .then((res) => {
+        clearCart();   
         alert("Payment Successful"); 
-        clearCart();
       })
       .catch((error) => {
         console.log("Payment Error: ", JSON.parse(error));
@@ -34,7 +37,7 @@ const StripeCheckoutButton = ({ price,clearCart }) => {
   };
   return (
     <StripeCheckout
-      label="Pay Now"
+      label={`Pay ₹ ${price}`}
       name="WonderBox ECOM"
       billingAddress
       shippingAddress
@@ -44,6 +47,8 @@ const StripeCheckoutButton = ({ price,clearCart }) => {
       panelLabel="Pay Now"
       token={onToken}
       currency="INR"
+      locale="en"
+      email={user.email}
       stripeKey={publishableKey}
     />
   );
@@ -54,6 +59,7 @@ const mapDispatchToProps = (dispatch) => ({
 const mapStateToProps = createStructuredSelector({
   cartItems: selectCartItems,
   total: selectCartTotal,
+  user:selectCurrentUser
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(StripeCheckoutButton);
